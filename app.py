@@ -2,6 +2,10 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Parameters
+xspace = 240
+yspace = 180
+
 # Physics function
 def projectile_motion(v0, angle_deg):
     g = 9.81  # m/s^2
@@ -22,6 +26,8 @@ x, y = projectile_motion(v0, angle)
 
 fig, ax = plt.subplots()
 ax.plot(x, y)
+ax.set_xlim([0,xspace])
+ax.set_ylim([0,yspace])
 ax.set_xlabel("Distance (m)")
 ax.set_ylabel("Height (m)")
 ax.set_title("Trajectory")
