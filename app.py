@@ -30,7 +30,7 @@ ax.set_xlim([0,xspace])
 ax.set_ylim([0,yspace])
 ax.set_xlabel("Distance (m)")
 ax.set_ylabel("Height (m)")
-ax.set_title("Trajectory")
+ax.set_title("Tata")
 st.pyplot(fig)
 
 st.markdown(f"**Flight time:** {2*v0*np.sin(np.radians(angle))/9.81:.2f} s")
