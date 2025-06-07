@@ -17,7 +17,7 @@ def projectile_motion(v0, angle_deg):
     return x, y
 
 # Streamlit UI
-st.title("Projectile Motion Simulator")
+st.title("Test: Projectile Motion Simulator")
 
 v0 = st.slider("Initial velocity (m/s)", 1, 100, 50)
 angle = st.slider("Launch angle (degrees)", 0, 90, 45)
